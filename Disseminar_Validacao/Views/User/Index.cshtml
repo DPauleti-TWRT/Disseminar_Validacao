@@ -1,0 +1,12 @@
+﻿@model Disseminar_Validacao.Models.User
+@{
+    <h1>Cadastro de Usuário</h1>
+    @using (Html.BeginForm("Index", "User", FormMethod.Post))
+    {
+        <input type="text" name="nome" placeholder="Nome" required/>
+        <input type="email" name="email" placeholder="Email" required/>
+        <input type="password" name="senha" placeholder="Senha" required/>
+        <input type="password" name="confirmarSenha" placeholder="Confirmar Senha" required/>
+        <button type="submit">Cadastrar</button>
+    }
+}
